@@ -1,0 +1,21 @@
+﻿<Window x:Class="_04_WebRequest.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_04_WebRequest"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label>Good name</Label>
+            <TextBox Name="txtName"></TextBox>
+            <Label>Description</Label>
+            <TextBox Name="txtDescr"></TextBox>
+            <Label>Price</Label>
+            <TextBox Name="txtPrice"></TextBox>
+            <Button Name="btnEdit" Click="BtnEdit_Click">Edit</Button>
+            <Button Name="btnClose" Click="BtnClose_Click">Close</Button>
+        </StackPanel>
+    </Grid>
+</Window>
