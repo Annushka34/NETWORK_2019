@@ -42,7 +42,7 @@ namespace _04_WebRequest
             //response.Close();
 
             HttpClient client = new HttpClient();          
-            HttpResponseMessage httpResult = await client.GetAsync(@"http://www.annushka.somee.com/api/Good/all");
+            HttpResponseMessage httpResult = await client.GetAsync(@"https://localhost:44379/api/Good/all");
             string data = await httpResult.Content.ReadAsStringAsync();
             var listGoods = JsonConvert.DeserializeObject<List<Good>>(data);
             result.Items.Clear();
