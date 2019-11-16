@@ -1,0 +1,20 @@
+﻿<Window x:Class="_05_PhoneBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_05_PhoneBook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Button Height="50" Click="Button_Click" Background="Green">SHOW ALL</Button>
+            <TextBlock Name="result" TextWrapping="Wrap" Height="200"></TextBlock>
+            <TextBox Name="Phone"></TextBox>
+            <TextBox Name="Name"></TextBox>
+            <TextBox Name="Surname"></TextBox>
+            <TextBox Name="Message"></TextBox>
+            <Button Height="50" Name="AddBtn" Click="AddBtn_Click" Background="Green">Add</Button>
+        </StackPanel>
+    </Grid>
+</Window>
